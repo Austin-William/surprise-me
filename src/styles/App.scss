@@ -1,0 +1,210 @@
+$color_1: #d8e2dc;
+$color_2: #ffe5d9;
+$color_3: #ffcad4;
+$color_4: #f4acb7;
+$color_5: #9d8189;
+
+$button-text-color: #ffffff;
+
+::selection {
+    background-color: $color_4;
+    color: $color_1;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $color_4;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $color_5;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color_1;
+
+    &-header {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color_2;
+
+        h1 {
+            font-size: 2rem;
+            color: $color_5;
+        }
+    }
+
+    &-container {
+        position: relative;
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            color: $color_5;
+            margin-top: 0;
+            z-index: 2;
+        }
+
+        &-message {
+            font-size: 1.5rem;
+            text-align: center;
+            color: $color_4;
+            margin: 1rem 0;
+        }
+
+        &-images {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin: 2rem 0;
+            z-index: 2;
+            min-height: 200px;
+
+            &-gif {
+                width: 200px;
+                border-radius: 5px;
+                box-shadow: 0 0 3px 2px $color_4;
+            }
+        }
+
+        &-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            z-index: 2;
+
+            button {
+                margin: 0 1rem;
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                color: $button-text-color;
+                background-color: $color_4;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: $color_5;
+                }
+            }
+        }
+
+        &-image-background {
+            position: absolute;
+            width: auto;
+            height: 150px;
+            opacity: 0.5;
+
+            &-1 {
+                bottom: 0;
+                right: 0;
+            }
+
+            &-2 {
+                top: 0;
+                right: 20vw;
+            }
+
+            &-3 {
+                bottom: 15vh;
+                left: 16vw;
+            }
+
+            @media (max-width: 768px) {
+                &-2 {
+                    top: 10vh;
+                    right: 0;
+                }
+
+                &-3 {
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        &-surprise {
+            text-align: center;
+            margin: 1rem 0;
+            padding: 0 1rem;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+
+            p {
+                font-size: 1.5rem;
+                text-align: center;
+                color: $color_4;
+                margin: 1rem 0;
+            }
+
+            span {
+                font-size: 2rem;
+                color: $color_5;
+                margin: 0 0.5rem;
+            }
+        }
+    }
+
+    &-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $color_3;
+        padding: 1rem 0;
+
+        span {
+            font-size: 1.5rem;
+            color: $color_4;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: $color_5;
+            text-align: center;
+        }
+
+        button {
+            margin: 1rem 0;
+            padding: 0.6rem 1rem;
+            font-size: 1rem;
+            color: $button-text-color;
+            background-color: $color_4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: $color_5;
+            }
+        }
+    }
+}
