@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/BeMyValentine/static/css/main.bf045a4a.css",
+    "main.css": "/BeMyValentine/static/css/main.b3fd071a.css",
     "main.js": "/BeMyValentine/static/js/main.1010a2ec.js",
     "index.html": "/BeMyValentine/index.html",
-    "main.bf045a4a.css.map": "/BeMyValentine/static/css/main.bf045a4a.css.map",
+    "main.b3fd071a.css.map": "/BeMyValentine/static/css/main.b3fd071a.css.map",
     "main.1010a2ec.js.map": "/BeMyValentine/static/js/main.1010a2ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf045a4a.css",
+    "static/css/main.b3fd071a.css",
     "static/js/main.1010a2ec.js"
   ]
 }
