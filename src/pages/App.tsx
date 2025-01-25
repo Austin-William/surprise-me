@@ -108,7 +108,7 @@ function App() {
         if (yesPressed) {
             setIsYes(true);
             setDisplayCounter(true);
-            setShortMessage("Thank you !");
+            setShortMessage("가보자고");
             setYesMessage("I love you !");
         }
     }
@@ -127,16 +127,19 @@ function App() {
     useEffect(() => {
         getSavedClicks();
         getYesPressed();
-    }, [count]);
+    }, [count, shortMessage, yesMessage]);
 
     return (
         <div className="app">
-            <header className='app-header'>
+            {/* <header className='app-header'>
                 <h1>
                     Hello {name} !
                 </h1>
-            </header>
+            </header> */}
             <section className='app-container'>
+                <h1 className='app-container-title'>
+                    ❤️{name}❤️
+                </h1>
                 <h1 className='app-container-title'>
                     Do yo want to be my Valentine ?
                 </h1>
@@ -173,13 +176,13 @@ function App() {
                         )
                     }
                 </div>
-                <img className='app-container-image-background app-container-image-background-1' src="1.png" alt="heart" />
-                <img className='app-container-image-background app-container-image-background-2' src="2.png" alt="heart" />
-                <img className='app-container-image-background app-container-image-background-3' src="3.png" alt="heart" />
+                <img className='app-container-image-background app-container-image-background-1' src="images/1.png" alt="heart" />
+                <img className='app-container-image-background app-container-image-background-2' src="images/2.png" alt="heart" />
+                <img className='app-container-image-background app-container-image-background-3' src="images/3.png" alt="heart" />
             </section>
             <footer className='app-footer'>
                 <span>
-                    © 2024
+                    © 2025
                 </span>
                 <h1>
                     Made with <span role='img' aria-label='heart'>❤️</span> by {creator}
