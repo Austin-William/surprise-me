@@ -114,14 +114,15 @@ function App() {
     }
 
     function reset() {
-        setCount(0);
-        setDisplayCounter(false);
-        setIsYes(false);
-        setShortMessage("");
-        setYesMessage("");
-        setUrlGif("https://media.giphy.com/media/ZdHsPsHUdWr882Uu85/giphy.gif");
-        localStorage.removeItem("clicks");
-        localStorage.removeItem("yesPressed");
+        // setCount(0);
+        // setDisplayCounter(false);
+        // setIsYes(false);
+        // setShortMessage("");
+        // setYesMessage("");
+        // setUrlGif("https://media.giphy.com/media/ZdHsPsHUdWr882Uu85/giphy.gif");
+        // localStorage.removeItem("clicks");
+        // localStorage.removeItem("yesPressed");
+        alert("Why ? ...");
     }
 
     useEffect(() => {
